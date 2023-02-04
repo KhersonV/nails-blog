@@ -143,3 +143,18 @@ a > ul > li{
     color: yellow;
     transition: all 0.5s;
 }
+.IvonMenu{
+    width: 20 px;
+    background-color:  rgba(193, 161, 240, 1);
+}
+
+.appCont{
+    background-color:  rgba(193, 161, 240, 1);
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+body{
+    width: 1200px;
+}

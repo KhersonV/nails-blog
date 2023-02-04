@@ -1,7 +1,14 @@
-type Props = {}
+import ProductsList from "../ProductsList/ProductsList";
+
+
+type Props = {};
+
 const Main = (props: Props) => {
   return (
-    <div>Main</div>
+    <div>
+      
+      <ProductsList />
+    </div>
   )
 }
 export default Main
