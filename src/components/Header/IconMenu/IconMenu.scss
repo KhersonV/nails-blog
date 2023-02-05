@@ -1,0 +1,44 @@
+.iconMenu-img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    background-color: rgba(193, 161, 240, 1);;
+    display: inline-flex;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+}
+.icons {
+    margin-left: 10px;
+    flex-wrap: nowrap;
+    display: inline-block;
+}
+.main-menu-ul {
+   
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-menu-li {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    flex-wrap: nowrap;
+    display: block;
+    
+    
+}
+
+.main-menu-li >a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 23px;
+    color: white;    
+}
+
+.main-menu-li >a:hover{
+    font-size: 27px;
+    color: yellow;
+    transition: all 500ms;
+}

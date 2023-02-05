@@ -14,7 +14,7 @@ const ProductsList = (props: Props) => {
     return (
         <>
             <Typography variant="h3" align="center" component="h2">
-                Products List
+                My works
             </Typography>
 
             <Grid container spacing={3}>
@@ -26,7 +26,7 @@ const ProductsList = (props: Props) => {
                         id,
                         
                     }: NailsProps) => (
-                        <Grid item xs={12} sm={6} md={4}>
+                        <Grid key={id} item xs={12} sm={6} md={4}>
                             {' '}
                             <ProductsListItem
                                 title={title}

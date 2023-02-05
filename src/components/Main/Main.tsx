@@ -1,4 +1,5 @@
-import ProductsList from "../ProductsList/ProductsList";
+import MyWorks from "../../pages/MyWorks/MyWorks";
+
 
 
 type Props = {};
@@ -7,7 +8,7 @@ const Main = (props: Props) => {
   return (
     <div>
       
-      <ProductsList />
+      <MyWorks/>
     </div>
   )
 }
