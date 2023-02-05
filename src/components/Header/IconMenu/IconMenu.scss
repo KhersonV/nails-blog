@@ -4,41 +4,51 @@
 }
 
 .container {
-    background-color: rgba(193, 161, 240, 1);;
+    background-color: rgba(193, 161, 240, 1);
     display: inline-flex;
-    width: 50%;
+    width: 63%;
     justify-content: start;
     align-items: center;
 }
 .icons {
+    align-items: center;
     margin-left: 10px;
     flex-wrap: nowrap;
     display: inline-block;
 }
 .main-menu-ul {
-   
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main-menu-li {
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     flex-wrap: nowrap;
     display: block;
-    
-    
 }
 
-.main-menu-li >a{
+.main-menu-li > a {
     margin-left: 25px;
     text-decoration: none;
     font-size: 23px;
-    color: white;    
+    color: white;
 }
 
-.main-menu-li >a:hover{
+.main-menu-li > a:hover {
     font-size: 27px;
     color: yellow;
     transition: all 500ms;
+}
+.hiden-numb {
+    display: none;
+    }
+
+.show-numb:hover {
+    
+
+    .hiden-numb {
+        display: block;
+        
+    }
 }

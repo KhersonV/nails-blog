@@ -1,9 +1,9 @@
-import ProductsList from "../../components/ProductsList/ProductsList"
+import WorksList from "../../components/WorksList/WorksList"
 
 type Props = {}
 const MyWorks = (props: Props) => {
   return (
-    <div><ProductsList /></div>
+    <div><WorksList /></div>
   )
 }
 export default MyWorks

@@ -1,5 +1,5 @@
 import { Button, Card, CardActions, CardContent } from '@mui/material'
-import './ProductsListItem.scss'
+import './WorksListItem.scss'
 
 
 
@@ -11,7 +11,7 @@ type Props = {
    
 }
 
-const ProductsListItem = ({
+const WorksListItem = ({
     title,
     description,
     picture,
@@ -31,4 +31,4 @@ const ProductsListItem = ({
         </Card>
     )
 }
-export default ProductsListItem
+export default WorksListItem

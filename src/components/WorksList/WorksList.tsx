@@ -1,6 +1,6 @@
 import nailsArray from "../../utils/nailsArray"
 import { Grid, Typography } from '@mui/material'
-import ProductsListItem from './ProductsListItem'
+import WorksListItem from './WorksListItem'
 
 type NailsProps = {
     title: string;
@@ -10,7 +10,7 @@ type NailsProps = {
   };
 
 type Props = {}
-const ProductsList = (props: Props) => {
+const WorksList = (props: Props) => {
     return (
         <>
             <Typography variant="h3" align="center" component="h2">
@@ -28,7 +28,7 @@ const ProductsList = (props: Props) => {
                     }: NailsProps) => (
                         <Grid key={id} item xs={12} sm={6} md={4}>
                             {' '}
-                            <ProductsListItem
+                            <WorksListItem
                                 title={title}
                                 description={description}
                                 picture ={picture}
@@ -41,4 +41,4 @@ const ProductsList = (props: Props) => {
         </>
     )
 }
-export default ProductsList
+export default WorksList
