@@ -10,7 +10,7 @@ const Main = (props: Props) => {
   return (
     <>
       
-      <MyWorks/>
+      <Blog/>
     </>
   )
 }
