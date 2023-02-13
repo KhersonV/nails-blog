@@ -41,7 +41,6 @@ const IconMenu = (props: Props) => {
             <li className="icons show-numb">
                 <img className="iconMenu-img" src={phone} alt="img-phone" />
                 <span className="hiden-numb">+13064604493</span>
-                
             </li>
         </ul>
     );

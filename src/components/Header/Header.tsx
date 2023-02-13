@@ -6,9 +6,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import IconMenu from "./IconMenu/IconMenu";
 import MainMenu from "./MainMenu/MainMenu";
 import { StyledEngineProvider } from "@mui/material/styles";
-import { Button} from "@mui/material";
+import { Button } from "@mui/material";
 import "./Header.scss";
-
 
 export default function MenuAppBar() {
     return (
@@ -42,7 +41,6 @@ export default function MenuAppBar() {
                                 >
                                     Favorites
                                 </Button>
-                                
                             </>
                         </Typography>
                     </Toolbar>

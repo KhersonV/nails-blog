@@ -1,15 +1,15 @@
-import nailsArray from "../../utils/nailsArray"
-import { Grid, Typography } from '@mui/material'
-import WorksListItem from './WorksListItem'
+import nailsArray from "../../utils/nailsArray";
+import { Grid, Typography } from "@mui/material";
+import WorksListItem from "./WorksListItem";
 
 type NailsProps = {
     title: string;
     description: string;
-    picture: string
+    picture: string;
     id: number;
-  };
+};
 
-type Props = {}
+type Props = {};
 const WorksList = (props: Props) => {
     return (
         <>
@@ -18,27 +18,21 @@ const WorksList = (props: Props) => {
             </Typography>
 
             <Grid container spacing={3}>
-            {nailsArray.map(
-                    ({
-                        title,
-                        description,
-                        picture,
-                        id,
-                        
-                    }: NailsProps) => (
+                {nailsArray.map(
+                    ({ title, description, picture, id }: NailsProps) => (
                         <Grid key={id} item xs={12} sm={6} md={4}>
-                            {' '}
+                            {" "}
                             <WorksListItem
                                 title={title}
                                 description={description}
-                                picture ={picture}
+                                picture={picture}
                                 id={id}
                             />
                         </Grid>
-                    )
+                    ),
                 )}
             </Grid>
         </>
-    )
-}
-export default WorksList
+    );
+};
+export default WorksList;

@@ -1,9 +1,11 @@
-import WorksList from "../../components/WorksList/WorksList"
+import WorksList from "../../components/WorksList/WorksList";
 
-type Props = {}
+type Props = {};
 const MyWorks = (props: Props) => {
-  return (
-    <div><WorksList /></div>
-  )
-}
-export default MyWorks
+    return (
+        <div>
+            <WorksList />
+        </div>
+    );
+};
+export default MyWorks;

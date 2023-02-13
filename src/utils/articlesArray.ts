@@ -1,6 +1,5 @@
-import nailTips from "../images/gel-nail-tips.png"
-import moon from "../images/moon.jpg"
-
+import nailTips from "../images/gel-nail-tips.png";
+import moon from "../images/moon.jpg";
 
 type ArticlesProps = {
     title: string;
@@ -29,17 +28,16 @@ const articlesArray: ArticlesProps[] = [
         title: "Correction",
         description:
             "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
-            picture: "asd",
+        picture: "asd",
         id: 3,
     },
     {
         title: "How to properly care",
         description:
             "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
-            picture: "asd",
+        picture: "asd",
         id: 4,
     },
-    
 ];
 
-export default articlesArray
+export default articlesArray;

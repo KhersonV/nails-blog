@@ -25,13 +25,12 @@ type NailsProps = {
     picture: string;
     id: number;
 };
- 
-
 
 const nailsArray: NailsProps[] = [
     {
         title: "Extension",
-        description: "Basic manicure + Nail extension + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Nail extension + Gel polish coating + Art design.",
         picture: image_1,
         id: 1,
     },
@@ -43,25 +42,29 @@ const nailsArray: NailsProps[] = [
     },
     {
         title: "Extension",
-        description: "Basic manicure + Nail extension + Gel polish coating + French Art.",
+        description:
+            "Basic manicure + Nail extension + Gel polish coating + French Art.",
         picture: image_3,
         id: 3,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_4,
         id: 4,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_5,
         id: 5,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
         picture: image_6,
         id: 6,
     },
@@ -73,79 +76,92 @@ const nailsArray: NailsProps[] = [
     },
     {
         title: "Extension",
-        description: "Basic manicure + Nail extension + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Nail extension + Gel polish coating + Art design.",
         picture: image_8,
         id: 8,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating.",
         picture: image_9,
         id: 9,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
         picture: image_10,
         id: 10,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_11,
         id: 11,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_12,
         id: 12,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating.",
         picture: image_13,
         id: 13,
     },
     {
         title: "Extension",
-        description: "Basic manicure + Nail extension + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Nail extension + Gel polish coating + Art design.",
         picture: image_14,
         id: 14,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
         picture: image_15,
         id: 15,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_16,
         id: 16,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_17,
         id: 17,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_18,
         id: 18,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + French Art.",
         picture: image_19,
         id: 19,
     },
     {
         title: "Gel reinforcements",
-        description: "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
+        description:
+            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
         picture: image_20,
         id: 20,
     },

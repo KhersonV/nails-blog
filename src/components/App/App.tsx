@@ -8,7 +8,7 @@ const App = (props: Props) => {
         <>
             <MenuAppBar />
             <Main />
-            <Footer/>
+            <Footer />
         </>
     );
 };
