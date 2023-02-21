@@ -14,11 +14,15 @@ type Props = {
 const WorksListItem = ({ title, description, picture }: Props) => {
     const [imgSrc, setImgSrc] = useState<string>(heart_bl);
 
+    const [liked, setLiked] = useState<boolean>();
+
     const toogleHeart = () => {
-        if (imgSrc === heart_bl) {
+        if (!liked) {
+            setLiked((prevState) => !prevState);
             setImgSrc(heart_red);
         } else {
-            return setImgSrc(heart_bl);
+            setLiked((prevState) => !prevState);
+            setImgSrc(heart_bl);
         }
     };
 
