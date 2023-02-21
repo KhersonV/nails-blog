@@ -1,5 +1,8 @@
 import { Button, Card, CardActions, CardContent } from "@mui/material";
 import "./WorksListItem.scss";
+import heart_bl from "../../images/heart-bl.svg";
+import heart_red from "../../images/heart-red.svg";
+import { useState } from 'react'
 
 type Props = {
     title: string;
@@ -9,6 +12,17 @@ type Props = {
 };
 
 const WorksListItem = ({ title, description, picture }: Props) => {
+
+    const [imgSrc, setImgSrc] = useState<string>(heart_bl)
+
+
+    const toogleHeart = () => {
+        if(imgSrc === heart_bl) {setImgSrc(heart_red)}
+        else{
+        return setImgSrc(heart_bl)}
+        
+    };
+
     return (
         <Card variant="outlined">
             <CardContent>
@@ -17,7 +31,9 @@ const WorksListItem = ({ title, description, picture }: Props) => {
                 <img className="nailsPicture" src={picture} alt="" />
             </CardContent>
             <CardActions className="product-btn-wrap">
-                <Button variant="outlined">Add to Wishlist</Button>
+                <Button onClick={() => toogleHeart()} variant="outlined">
+                    <img className="like" src={imgSrc} alt="heart-bl" />
+                </Button>
             </CardActions>
         </Card>
     );

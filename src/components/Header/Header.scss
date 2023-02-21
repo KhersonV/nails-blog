@@ -14,3 +14,25 @@
     color: yellow;
     transition: all 500ms;
 }
+.conteiner-btn-menu{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+
+.menu-btn{
+    display: inline-block;
+}
+
+.menu-link{
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.menu-link:hover{
+    transition: all 500ms;
+    color: yellow;
+    font-size: 27px;
+}

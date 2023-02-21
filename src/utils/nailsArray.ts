@@ -8,7 +8,6 @@ import image_7 from "../images/nails/7.jpg";
 import image_8 from "../images/nails/8.jpg";
 import image_9 from "../images/nails/9.jpg";
 import image_10 from "../images/nails/10.jpg";
-import image_11 from "../images/nails/11.jpg";
 import image_12 from "../images/nails/12.jpg";
 import image_13 from "../images/nails/13.jpg";
 import image_14 from "../images/nails/14.jpg";
@@ -19,7 +18,7 @@ import image_18 from "../images/nails/18.jpg";
 import image_19 from "../images/nails/19.jpg";
 import image_20 from "../images/nails/20.jpg";
 
-type NailsProps = {
+export type NailsProps = {
     title: string;
     description: string;
     picture: string;
@@ -95,13 +94,7 @@ const nailsArray: NailsProps[] = [
         picture: image_10,
         id: 10,
     },
-    {
-        title: "Gel reinforcements",
-        description:
-            "Basic manicure + Gel reinforcements + Gel polish coating + Art design.",
-        picture: image_11,
-        id: 11,
-    },
+    
     {
         title: "Gel reinforcements",
         description:
@@ -166,5 +159,11 @@ const nailsArray: NailsProps[] = [
         id: 20,
     },
 ];
+
+export const getNailsObject = (array: NailsProps[]) =>
+    array.reduce(
+        (object, product) => ({ ...object, [product.id]: product }),
+        {},
+    );
 
 export default nailsArray;
