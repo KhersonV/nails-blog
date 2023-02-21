@@ -2,7 +2,7 @@ import { Button, Card, CardActions, CardContent } from "@mui/material";
 import "./WorksListItem.scss";
 import heart_bl from "../../images/heart-bl.svg";
 import heart_red from "../../images/red-heart-icon.svg";
-import { useState } from 'react'
+import { useState } from "react";
 
 type Props = {
     title: string;
@@ -12,15 +12,14 @@ type Props = {
 };
 
 const WorksListItem = ({ title, description, picture }: Props) => {
-
-    const [imgSrc, setImgSrc] = useState<string>(heart_bl)
-
+    const [imgSrc, setImgSrc] = useState<string>(heart_bl);
 
     const toogleHeart = () => {
-        if(imgSrc === heart_bl) {setImgSrc(heart_red)}
-        else{
-        return setImgSrc(heart_bl)}
-        
+        if (imgSrc === heart_bl) {
+            setImgSrc(heart_red);
+        } else {
+            return setImgSrc(heart_bl);
+        }
     };
 
     return (

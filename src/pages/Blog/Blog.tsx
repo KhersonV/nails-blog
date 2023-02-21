@@ -1,12 +1,7 @@
-import Articles from "../../components/Articles/Articles"
+import Articles from "../../components/Articles/Articles";
 
-type Props = {}
+type Props = {};
 const Blog = (props: Props) => {
-  return (
-    
-      <Articles/>
-
-    
-  )
-}
-export default Blog
+    return <Articles />;
+};
+export default Blog;

@@ -94,7 +94,7 @@ const nailsArray: NailsProps[] = [
         picture: image_10,
         id: 10,
     },
-    
+
     {
         title: "Gel reinforcements",
         description:
