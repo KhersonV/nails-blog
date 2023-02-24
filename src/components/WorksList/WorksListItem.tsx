@@ -11,6 +11,7 @@ type Props = {
     id: number;
 };
 
+
 const WorksListItem = ({ title, description, picture }: Props) => {
     const [imgSrc, setImgSrc] = useState<string>(heart_bl);
 
