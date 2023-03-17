@@ -2,6 +2,7 @@ import nailsArray from "../../utils/nailsArray";
 import { Grid } from "@mui/material";
 import WorksListItem from "../../components/WorksList/WorksListItem";
 import { useAppSelector } from "../../redux/hooks";
+import { minHeight } from "@mui/system";
 
 type Props = {};
 
@@ -17,12 +18,13 @@ const Favorites = (props: Props) => {
         (state) => state.productsLikeState,
     );
 
-    // Отфильтрованный массив товаров, которые были лайкнуты
     const likedNails = nailsArray.filter(
         ({ id }: NailsProps) => productsLikeState[id],
     );
 
-    return (
+    return likedNails.length === 0 ? (
+        <div>Еще нет понравившихся работ</div>
+    ) : (
         <Grid container spacing={3}>
             {likedNails.map(
                 ({ title, description, picture, id }: NailsProps) => (
