@@ -8,6 +8,7 @@ import MainMenu from "./MainMenu/MainMenu";
 import { StyledEngineProvider } from "@mui/material/styles";
 import { Button } from "@mui/material";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 export default function MenuAppBar() {
     return (
@@ -39,7 +40,9 @@ export default function MenuAppBar() {
                                     className="menu-btn-favorites"
                                     variant="text"
                                 >
-                                    Favorites
+                                    <Link className="menu-link" to={"/favorites"}>
+                                        Favorites
+                                    </Link>
                                 </Button>
                             </>
                         </Typography>

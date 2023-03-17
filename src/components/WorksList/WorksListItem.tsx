@@ -2,7 +2,8 @@ import { Button, Card, CardActions, CardContent } from "@mui/material";
 import "./WorksListItem.scss";
 import heart_bl from "../../images/heart-bl.svg";
 import heart_red from "../../images/red-heart-icon.svg";
-import { useState } from "react";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { addLike, removeLike } from "../../redux/likeReducer";
 
 type Props = {
     title: string;
@@ -11,21 +12,9 @@ type Props = {
     id: number;
 };
 
-
-const WorksListItem = ({ title, description, picture }: Props) => {
-    const [imgSrc, setImgSrc] = useState<string>(heart_bl);
-
-    const [liked, setLiked] = useState<boolean>();
-
-    const toogleHeart = () => {
-        if (!liked) {
-            setLiked((prevState) => !prevState);
-            setImgSrc(heart_red);
-        } else {
-            setLiked((prevState) => !prevState);
-            setImgSrc(heart_bl);
-        }
-    };
+const WorksListItem = ({ id, title, description, picture }: Props) => {
+    const isLiked = useAppSelector((state) => state.productsLikeState[id]);
+    const dispatch = useAppDispatch();
 
     return (
         <Card variant="outlined">
@@ -35,8 +24,19 @@ const WorksListItem = ({ title, description, picture }: Props) => {
                 <img className="nailsPicture" src={picture} alt="" />
             </CardContent>
             <CardActions className="product-btn-wrap">
-                <Button onClick={() => toogleHeart()} variant="outlined">
-                    <img className="like" src={imgSrc} alt="heart-bl" />
+                <Button
+                    variant="outlined"
+                    onClick={() =>
+                        isLiked
+                            ? dispatch(removeLike(id))
+                            : dispatch(addLike(id))
+                    }
+                >
+                    <img
+                        className="like"
+                        src={isLiked ? heart_red : heart_bl}
+                        alt=""
+                    />
                 </Button>
             </CardActions>
         </Card>

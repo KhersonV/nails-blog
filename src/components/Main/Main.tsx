@@ -2,10 +2,14 @@ import Blog from "../../pages/Blog/Blog";
 import MyWorks from "../../pages/MyWorks/MyWorks";
 import { Routes, Route } from "react-router";
 import About from "../../pages/About/About";
+import Favorites from "../../pages/Favorites/Favorites";
 
-type Props = {};
+type Props = {
+  
+};
 
 const Main = (props: Props) => {
+
     return (
         <>
             <Routes>
@@ -16,6 +20,9 @@ const Main = (props: Props) => {
                     {" "}
                 </Route>
                 <Route path="/about" element={<About />}>
+                    {" "}
+                </Route>
+                <Route path="/favorites" element={<Favorites  />}>
                     {" "}
                 </Route>
             </Routes>

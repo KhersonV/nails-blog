@@ -1,10 +1,12 @@
 import WorksList from "../../components/WorksList/WorksList";
 
-type Props = {};
-const MyWorks = (props: Props) => {
+type Props = {
+    
+};
+const MyWorks = ({}: Props) => {
     return (
         <div>
-            <WorksList />
+            <WorksList  />
         </div>
     );
 };
