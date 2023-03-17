@@ -16,9 +16,7 @@ type NailsProps = {
     id: number;
 };
 
-type Props = {
-    
-};
+type Props = {};
 const WorksList = (props: Props) => {
     return (
         <>
@@ -54,7 +52,6 @@ const WorksList = (props: Props) => {
                         <Grid key={id} item xs={12} sm={6} md={4}>
                             {" "}
                             <WorksListItem
-                               
                                 title={title}
                                 description={description}
                                 picture={picture}
