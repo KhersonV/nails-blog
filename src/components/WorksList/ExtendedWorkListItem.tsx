@@ -6,8 +6,6 @@ import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { addLike, removeLike } from "../../redux/likeReducer";
 import { NailsProps } from "../../utils/nailsArray";
 
-type Props = {};
-
 const ExtendedWorkListItem = ({
     article,
     id,
