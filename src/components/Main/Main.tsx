@@ -3,9 +3,10 @@ import MyWorks from "../../pages/MyWorks/MyWorks";
 import { Routes, Route } from "react-router";
 import About from "../../pages/About/About";
 import Favorites from "../../pages/Favorites/Favorites";
+import Category from "../Header/Category/Category";
+import ArticlePage from "../../pages/ArticlePage/ArticlePage";
 
 type Props = {};
-
 const Main = (props: Props) => {
     return (
         <>
@@ -20,6 +21,12 @@ const Main = (props: Props) => {
                     {" "}
                 </Route>
                 <Route path="/favorites" element={<Favorites />}>
+                    {" "}
+                </Route>
+                <Route path="/category" element={<Category />}>
+                    {" "}
+                </Route>
+                <Route path="/article" element={<ArticlePage />}>
                     {" "}
                 </Route>
             </Routes>

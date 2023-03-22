@@ -9,8 +9,19 @@ import { StyledEngineProvider } from "@mui/material/styles";
 import { Button } from "@mui/material";
 import "./Header.scss";
 import { Link } from "react-router-dom";
+import { useAppSelector } from "../../redux/hooks";
+import nailsArray, { NailsProps } from "../../utils/nailsArray";
 
 export default function MenuAppBar() {
+    const productsLikeState = useAppSelector(
+        (state) => state.productsLikeState,
+    );
+
+    const likedNails = nailsArray.filter(
+        ({ id }: NailsProps) => productsLikeState[id],
+    );
+    const favoritesCount = likedNails.length;
+
     return (
         <StyledEngineProvider injectFirst>
             <div>
@@ -40,8 +51,19 @@ export default function MenuAppBar() {
                                     className="menu-btn-favorites"
                                     variant="text"
                                 >
-                                    <Link className="menu-link" to={"/favorites"}>
-                                        Favorites
+                                    <Link
+                                        className="menu-link"
+                                        to={"/favorites"}
+                                    >
+                                        Favorites {favoritesCount}
+                                    </Link>
+                                </Button>
+                                <Button
+                                    className="menu-btn-favorites"
+                                    variant="text"
+                                >
+                                    <Link className="category" to={"/category"}>
+                                        Category
                                     </Link>
                                 </Button>
                             </>

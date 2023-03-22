@@ -2,7 +2,6 @@ import nailsArray from "../../utils/nailsArray";
 import { Grid } from "@mui/material";
 import WorksListItem from "../../components/WorksList/WorksListItem";
 import { useAppSelector } from "../../redux/hooks";
-import { minHeight } from "@mui/system";
 
 type Props = {};
 
